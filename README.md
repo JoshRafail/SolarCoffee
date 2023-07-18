@@ -33,10 +33,15 @@ Npgsql.EntityFrameworkCore.PostgreSQL on Data
 ## postgres
 When using commands make sure to execute as user "postgres" eg:
 `psql -U postgres`
+
 `CREATE USER solardev WITH PASSWORD 'solar123';`
+
 `CREATE DATABASE solardev;`
+
 `GRANT ALL PRIVILEGES ON DATABASE solardev TO solardev;`
+
 `\c solardev solardev`
+
 password: solar123
 
 
