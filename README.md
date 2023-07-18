@@ -36,6 +36,9 @@ When using commands make sure to execute as user "postgres" eg:
 `CREATE USER solardev WITH PASSWORD 'solar123';`
 `CREATE DATABASE solardev;`
 `GRANT ALL PRIVILEGES ON DATABASE solardev TO solardev;`
+`\c solardev solardev`
+password: solar123
+
 
 How to view users:
 `psql -U postgres -c "\du"`
@@ -44,7 +47,17 @@ Now create database
 `createuser -U postgres -l -d -P "solardev"`
 
 
-Prompts:
+Add Packages to Web:
+Microsoft.EntityFrameworkCore
+Microsoft.AspNetCore.Mvc.NewtonsoftJson
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.Tools
+
+dotnet ef --startup-oroject ../SolarCoffee.Web/ migrations add InitialMigration
+
+
+## Prompts:
 Following this tutorial https://www.udemy.com/course/learn-full-stack-vue-net-core-postgres
 
 This tutorial is nearly 3 years old so there are much newer dotnet versions now. I am having issues getting the necessary packages such as entity framework being compatible with the dotnet 7.0. Do you have advice on how to make a dotnet, entity framework, postgres, vue based web app with the newest and compatible versions?
