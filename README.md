@@ -44,6 +44,9 @@ When using commands make sure to execute as user "postgres" eg:
 
 password: solar123
 
+NOTE - MAKE SURE solardev is the owner of solardev
+list databases:
+`\l`
 
 How to view users:
 `psql -U postgres -c "\du"`
@@ -51,6 +54,8 @@ How to view users:
 Now create database
 `createuser -U postgres -l -d -P "solardev"`
 
+
+## Entity Framework build migration
 
 ### Add Packages to Web:
 Microsoft.EntityFrameworkCore
@@ -61,6 +66,8 @@ Microsoft.EntityFrameworkCore.Tools
 
 dotnet tool install --global dotnet-ef
 dotnet ef --startup-project ../SolarCoffee.Web/ migrations add InitialMigration
+
+dotnet ef --startup-project ../SolarCoffee.Web/ database update
 
 
 ## Prompts:
