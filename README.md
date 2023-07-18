@@ -6,7 +6,7 @@ VS Community 2022
 
 What I did to get it running:
 
-use Dotnetcore 6.0
+use Dotnetcore 6.0. Make sure to specify dotnet version for SolarCoffee.Web (by defaut this is not specified)
 add Microsoft.AspNetCore.Mvc.NewtonsoftJson at version 6
 In startup code (Program.cs) update line to be the following: services.AddControllers().AddNewtonsoftJson();
 
