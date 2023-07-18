@@ -32,7 +32,7 @@ Npgsql.EntityFrameworkCore.PostgreSQL on Data
 
 ## postgres
 When using commands make sure to execute as user "postgres" eg:
-`psql postgres`
+`psql -U postgres`
 
 How to view users:
 `psql -U postgres -c "\du"`
