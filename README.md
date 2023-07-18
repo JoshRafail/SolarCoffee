@@ -47,14 +47,15 @@ Now create database
 `createuser -U postgres -l -d -P "solardev"`
 
 
-Add Packages to Web:
+### Add Packages to Web:
 Microsoft.EntityFrameworkCore
 Microsoft.AspNetCore.Mvc.NewtonsoftJson
 Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.Tools
 
-dotnet ef --startup-oroject ../SolarCoffee.Web/ migrations add InitialMigration
+dotnet tool install --global dotnet-ef
+dotnet ef --startup-project ../SolarCoffee.Web/ migrations add InitialMigration
 
 
 ## Prompts:
