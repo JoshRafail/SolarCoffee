@@ -10,3 +10,5 @@ migrations:
 
 db:
 	cd ./SolarCoffee.Data && dotnet ef --startup-project ../SolarCoffee.Web/ database update && cd ..
+
+# After creating new models and such run BOTH migrations and db
