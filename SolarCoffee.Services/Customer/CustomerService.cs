@@ -24,7 +24,7 @@ namespace SolarCoffee.Services.Customer
         public List<Data.Models.Customer> GetAllCustomers()
         {
             return _db.Customers
-                .Include(customer => customer.PrimaryAdress)
+                .Include(customer => customer.PrimaryAddress)
                 .OrderBy(customer => customer.LastName)
                 .ToList();
         }

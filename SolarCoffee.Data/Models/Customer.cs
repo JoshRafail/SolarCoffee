@@ -19,6 +19,6 @@ namespace SolarCoffee.Data.Models
         [MaxLength(32)]
         public string LastName { get; set; }
 
-        public CustomerAddress PrimaryAdress { get; set; }
+        public CustomerAddress PrimaryAddress { get; set; }
     }
 }
