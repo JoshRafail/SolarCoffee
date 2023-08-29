@@ -77,6 +77,12 @@ This tutorial is nearly 3 years old so there are much newer dotnet versions now.
 
 
 ## Running Code
+cd to solarcoffee.frontend
+"npm run serve"
+
+In Visual Studio run SolarCoffee.Web
+
+## Building Code
 Makefile
 
 CD to Makefile
