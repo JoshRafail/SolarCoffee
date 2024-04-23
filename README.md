@@ -1,5 +1,7 @@
 # SolarCoffee
 
+CODE COPY: https://github.com/productive-dev/solar-coffee/tree/master
+
 Requirements:
 dotNet 7.0
 VS Community 2022
